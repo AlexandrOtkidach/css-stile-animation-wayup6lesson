@@ -1,0 +1,272 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, a, button, form, span, ul,li{
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	}
+
+p{
+	line-height: 1,6em;
+}
+
+.header{
+	background: rgba(77,189,254,1);
+	background: -moz-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(to right, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+	color: #fff;
+}
+
+.container{
+	width: 1171px;
+	margin: 0 auto;
+}
+
+.container-head{
+	padding-top: 60px;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 100px;
+	padding-top: 20px;
+}
+
+.offer{
+	align-self: center;
+	width: 560px;
+}
+
+.title{
+	font-size: 37px;
+}
+
+.title span{
+	font-size: 59px;
+}
+
+.intro{
+	width: 402px;
+	padding-top: 37px;
+	padding-bottom: 39px;
+	margin: 0;
+}
+
+.btn{
+	width: 223px;
+	background: #ffd429;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	padding: 18px 0;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	transition: all 0,5s ease;
+}
+
+.btn:hover{
+	background: #d0b858;
+}
+
+
+.info{
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.infoation{
+	padding-bottom: 120px;
+	padding-top: 100px;
+}
+
+.section-title{	
+	margin: 0;
+	font-size: 30px; 
+	text-align: center;
+
+}
+
+.info-title{
+	font-size: 19px;
+	text-align: center;
+}
+
+.info-text{
+	margin-top: 0;
+	text-align: center;
+}
+
+.time{
+	padding-top: 80px;
+	padding-bottom: 20px;
+	width: 300px;
+	background: url(../img/logo1.jpg) no-repeat center top; 
+}
+
+.palm{
+	padding-top: 80px;
+	padding-bottom: 20px;
+	width: 270px;
+	background: url(../img/logo2.jpg) no-repeat center top;
+}
+
+.rocket{
+	padding-top: 80px;
+	padding-bottom: 20px;
+	width: 303px;
+	background: url(../img/logo3.jpg) no-repeat center top;
+}
+
+.form{
+	padding-top: 90px;
+	padding-bottom: 100px;
+	background: #ecf3f8;
+}
+
+.form-input{
+	padding-top: 60px;
+	text-align: -webkit-center;
+}
+
+.input{
+	width: 343px;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	padding-left: 25px;
+	height: 48px;
+	margin-bottom: 15px;
+}
+
+.btn-form{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 343px;
+	border: 0;
+	margin-bottom: 15px;
+	font-weight: 900;
+}
+
+.footer{
+	padding: 63px 0;
+	background: #164d7a;
+	text-align: center;
+}
+
+.credits{
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+}
+
+.animate__animated{
+	opacity: 0;
+}
+
+.visibility{
+	opacity: 1;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+	.wrapper{
+		padding-bottom: 60px;
+	}
+	.turizm{
+		width: 560px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px){
+	.container{
+		width: 720px;
+	}
+	.wrapper{
+		padding-top: 40px;
+		flex-direction: column;
+	}
+	.offer{
+		padding-bottom: 40px;
+		width: 100%;
+	}
+	.intro{
+		width: 80%;
+	}
+	.turizm{
+		display: block;
+	}
+	.info{
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px){
+	.container{
+		width: 540px
+	}
+	.turizm{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.input{
+		width: 343px;
+	}
+	.btn-form{
+		width: 343px;
+	}
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px){
+	.container{
+		width: 100%;
+	}
+	.section-title{
+		margin: 0 10px;
+	}
+	.logo{
+		margin-left: 10px;
+	}
+	.title{
+		margin: 0 10px;
+	}
+	.intro{
+		margin: 0 10px;
+	}
+	.input{
+		width: 95%;
+		margin: 10px 10px;
+	}
+	.btn{
+		margin: 0 10px auto;
+		width: 95%;
+	}
+}
